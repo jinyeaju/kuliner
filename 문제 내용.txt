@@ -1,0 +1,38 @@
+
+1. 폰트 형태 아이콘 가져오기 - fontawesome 이용
+
+<script src="https://kit.fontawesome.com/c2a8ed99bd.js"></script>
+
+​
+
+2. 애니메이션 기능 부여하기 - wow.js 애니메이션
+
+​
+
+3. 구글 맵 가져오기 - Google Map 활용
+
+1단계 : div 공간을 잡는다. (id="map" 태그 안에 부여)
+
+2단계 : 구글 맵 api 를 호출한다.(하단에 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMOwJdqgkxI6MQb4E95pSSBF1TABF5pZA&callback=initMap"></script> )
+
+2단계 : 스크립트를 넣는다.
+
+function initMap() { 
+
+var uluru = {lat: 37.463, lng: 126.894}; //lat(latitude, 위도), lng(longitude, 경도)
+
+var map = new google.maps.Map(document.getElementById('map'), { 
+
+zoom: 10, 
+
+center: uluru 
+
+}); 
+
+var marker = new google.maps.Marker({ position: uluru, map: map }); 
+
+}
+
+​
+
+==================================================================
