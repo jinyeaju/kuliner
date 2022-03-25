@@ -287,3 +287,285 @@ a{ text-decoration: none;}
 #story .wrap .deco_img img{width: 100%;}
 
 
+
+
+
+/* [콘텐츠 내부에 암막과 문자를 단계별로 위치시키기] */
+#midEdu1{}
+#midEdu1 .outer{
+    width: 600px; height: 300px;
+    background-image: url(../img/menu_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+    border-radius: 10px;
+}
+#midEdu1 .outer .dark_bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    /* display: none;
+    transition: display 1s; */
+    opacity: 0;
+    transition: opacity 1s;
+}
+/* #midEdu1 .outer .dark_bg:hover{ opacity: 1; } */
+#midEdu1 .outer:hover .dark_bg{
+    /* display: block; */
+    opacity: 1;
+}
+#midEdu1 .outer .dark_bg h3{
+    font-size: 28px;
+}
+#midEdu1 .outer .dark_bg p{
+    padding-top: 10px;
+}
+#midEdu1 .outer .dark_bg span{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #f60;
+}
+
+
+
+
+
+
+
+/* #special part */
+#special{ 
+    background-color: #ededed;
+    font-size: 0;
+}
+#special #top_bg{
+    width: 100%;
+    height: 460px;
+    /* background-color: #a1a; */
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#special #top_bg .top_bg_dark{
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+#special #main_cont{
+    width: 100%; 
+    /* height: 1150px; */
+    /* background-color: #aad; */
+    color: #fff;
+    margin-top: -360px;
+}
+#special #main_cont .cont_wrap{
+    width: 1160px; height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* background-color: #ac9; */
+}
+
+#special #main_cont .cont_wrap .cont_title{ text-align: center; }
+#special #main_cont .cont_wrap .cont_title h2{
+    font-size: 54px;
+    line-height: 72px;
+    /* background-color: #a54; */
+    padding: 20px 0;
+}
+#special #main_cont .cont_wrap .cont_title p{
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+
+#special #main_cont .cont_wrap .menu_cont .menu{
+    width: calc(100% / 3 - 30px); height: 360px;
+    margin: 0 15px 30px;
+    /* background-color: #faf; */
+    display: inline-block;
+    vertical-align: top;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
+    padding: 20px;
+}
+#special #main_cont .cont_wrap .menu_cont .menu:nth-child(1){
+    background-image: url(../img/menu_1.jpg); 
+    width: calc(100% / 3 * 2 - 30px);
+}
+#special #main_cont .cont_wrap .menu_cont .menu:nth-child(2){background-image: url(../img/menu_2.jpg);}
+#special #main_cont .cont_wrap .menu_cont .menu:nth-child(3){background-image: url(../img/menu_3.jpg);}
+#special #main_cont .cont_wrap .menu_cont .menu:nth-child(4){background-image: url(../img/menu_4.jpg);}
+#special #main_cont .cont_wrap .menu_cont .menu:nth-child(5){background-image: url(../img/menu_5.jpg);}
+
+#special #main_cont .cont_wrap .menu_cont .menu .menu_dark{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 1s;
+    width: 100%; height: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+#special #main_cont .cont_wrap .menu_cont .menu:hover .menu_dark{
+    opacity: 1;
+    cursor: pointer;
+}
+#special #main_cont .cont_wrap .menu_cont .menu .menu_dark .menuName{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#special #main_cont .cont_wrap .menu_cont .menu .menu_dark p{
+    font-size: 18px;
+}
+#special #main_cont .cont_wrap .menu_cont .menu .menu_dark span{
+    font-size: 28px;
+    font-weight: bold;
+    color: #f60;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#special #main_cont .cont_wrap .downArrow{
+    display: block;
+    text-align: center;
+    padding-bottom: 60px;
+    /* background-color: #ac4; */
+}
+
+
+
+
+
+
+
+#midEdu2{}
+
+#midEdu2 .frame{
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #a39;
+    font-size: 0;
+}
+#midEdu2 .frame .box{
+    display: inline-block;
+    width: calc(100% / 3 - 20px);
+    height: 280px;
+    background-color: #faa;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+/* #dishes part */
+#dishes{ 
+    /* height: 1700px; */
+    font-size: 0;
+    color: #555;
+    /* background-color: #a0f; */
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/3.png);
+    background-attachment: fixed;
+}
+#dishes .wrap{ 
+    width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* 모바일에서 좌측과 우측으로 밀착되지 않도록 좌우 여백을 위해 구성 */
+}
+
+
+#dishes .wrap .dishes_title_part{ text-align: center; }
+#dishes .wrap .dishes_title_part h3{
+    padding: 80px 0 20px;
+    font-size: 54px;
+    line-height: 72px;
+}
+#dishes .wrap .dishes_title_part p{
+    padding-bottom: 80px;
+    font-size: 16px;
+}
+
+
+#dishes .wrap .dishes_cont{}
+#dishes .wrap .dishes_cont .menu_list{}
+
+#dishes .wrap .dishes_cont .menu_list .title_part{
+    padding: 40px 0 20px;
+}
+#dishes .wrap .dishes_cont .menu_list .title_part h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #999;
+    /* background-color: #faf; */
+    text-align: center;
+}
+
+
+#dishes .wrap .dishes_cont .menu_list .dish_part{
+    width: 100%;
+    /* padding: 60px 0; */
+    position: relative;
+    /* background-color: #ac1; */
+    padding-bottom: 20px;
+}
+#dishes .wrap .dishes_cont .menu_list .dish_part .left{
+    width: calc(50% - 30px);
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color: #ffa; */
+}
+#dishes .wrap .dishes_cont .menu_list .dish_part > div h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+#dishes .wrap .dishes_cont .menu_list .dish_part > div p{
+    font-size: 16px;
+}
+#dishes .wrap .dishes_cont .menu_list .dish_part > div span{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f60;
+    text-align: right;
+}
+#dishes .wrap .dishes_cont .menu_list .dish_part .right{
+    width: calc(50% - 30px);
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color: #aaf; */
+}
+
+
+#dishes .wrap .dishes_cont .menu_list .dish_part .centerLine{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: #cfcfcf;
+    transform: translateX(-50%);
+}
+#dishes .wrap .downArrow{
+    padding: 40px 0 60px;
+    display: block;
+    text-align: center;
+    /* background-color: #6b5; */
+}
+
