@@ -56,6 +56,7 @@ a{ text-decoration: none;}
     margin: 0 10px;
     cursor: pointer;
 }
+#header .header_top .wrap_top .header_top_right ul li:hover a{color: #f60;}
 #header .header_top .wrap_top .header_top_right ul li:last-child a{ margin-right: 0;}
 
 
@@ -490,7 +491,7 @@ a{ text-decoration: none;}
 
 
 #dishes .wrap .dishes_title_part{ text-align: center; }
-#dishes .wrap .dishes_title_part h3{
+#dishes .wrap .dishes_title_part h2{
     padding: 80px 0 20px;
     font-size: 54px;
     line-height: 72px;
@@ -569,3 +570,285 @@ a{ text-decoration: none;}
     /* background-color: #6b5; */
 }
 
+
+
+
+/* service part */
+#service{
+    width: 100%;
+    background-color: #ededed;
+    font-size: 0;
+}
+#service .wrap{
+    width: 1160px;
+    padding: 0 10px;
+    color: #555;
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: #aaf; */
+}
+#service .wrap .title{}
+#service .wrap .title h2{
+    padding: 60px 0 20px;
+    font-size: 54px;
+    line-height: 72px;
+}
+#service .wrap .title p{
+    font-size: 16px;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+}
+#service .wrap .content{}
+#service .wrap .content .box{
+    display: inline-block;
+    vertical-align: top;
+    width: 360px; height: 360px;
+    background-color: #fee;
+    margin: 0 10px;
+    border-radius: 8px;
+    padding: 40px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+#service .wrap .content .box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #f99;
+}
+#service .wrap .content .box img{
+    padding-top: 40px;
+    /* background-color: #a4f; */
+}
+#service .wrap .content .box h3{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+#service .wrap .content .box p{
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+#service .wrap a{
+    display: block;
+    padding: 40px 0 60px;
+}
+#service .wrap a img{}
+
+
+
+
+/* subscribe part */
+#offer{
+    width: 100%; height: 460px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/6.jpg);
+    background-attachment: fixed;
+    font-size: 0;
+}
+
+#offer .dark{
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: table; */
+    position: relative;
+}
+
+#offer .dark .wrap{
+    width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* display: table-cell;
+    vertical-align: middle;
+    text-align: center; */
+    /* 포지션 앱솔루트는 공중부양 상태이다. */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#offer .dark .wrap .title{ text-align: center; color: #fff;}
+#offer .dark .wrap .title h2{
+    font-size: 54px;
+    line-height: 72px;
+    padding: 20px 0;
+}
+#offer .dark .wrap .title p{
+    font-size: 16px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+#offer .dark .wrap .content{
+    width: 740px; height: 60px;
+    border-radius: 8px;
+    border: 1px solid #f60;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 10px;
+}
+#offer .dark .wrap .content input{
+    width: calc(100% - 58px); height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+}
+
+#offer .dark .wrap .content button{
+    display: inline-block;
+    vertical-align: middle;
+    width: 58px; height: 58px;
+    border: none;
+    background-color: #fff;
+    color: #f60;
+    font-size: 20px;
+    padding: 0;
+}
+
+
+/* [중간교육] 구글맵 연동하기 */
+#midEdu3 #map_g{
+    width: 500px; height: 400px;
+    background-color: #54a;
+}
+
+
+/* register part */
+#mapRegister{
+    width: 100%;
+    background-color: #ededed;
+    font-size: 0;
+}
+#mapRegister .wrap{
+    width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* background-color: #aec; */
+    height: 400px;
+}
+
+#mapRegister .wrap #map{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 40px); height: calc(100% - 40px);
+    border-radius: 8px;
+    margin: 20px;
+    /* background-color: #ffa; */
+    transition: box-shadow 1s;
+}
+#mapRegister .wrap #map:hover{
+    box-shadow: 0px 0px 8px #555;
+}
+
+#mapRegister .wrap .register{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    width: calc(50% - 40px); height: calc(100% - 40px);
+    /* background-color: #aaf; */
+    position: relative;
+}
+#mapRegister .wrap .register .register_wrap{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: #ac8; */
+}
+#mapRegister .wrap .register .register_wrap .title{}
+#mapRegister .wrap .register .register_wrap .title h2{
+    font-size: 54px;
+    line-height: 72px;
+    color: #555;
+    text-align: center;
+}
+
+#mapRegister .wrap .register .register_wrap .content{}
+#mapRegister .wrap .register .register_wrap .content input.inoutBox{
+    width: 100%; height: 35px;
+    padding: 0 20px;
+    margin-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background-color: transparent;
+}
+#mapRegister .wrap .register .register_wrap .content .checkBox{}
+#mapRegister .wrap .register .register_wrap .content .checkBox #check{
+    display: inline-block;
+}
+#mapRegister .wrap .register .register_wrap .content .checkBox label{
+    font-size: 18px;
+}
+#mapRegister .wrap .register .register_wrap .content .submit_btn{
+    float: right;
+    text-align: center;
+    width: 240px; height: 41px;
+    font-size: 18px;
+    background-color: #f60;
+    border-radius: 8px;
+}
+#mapRegister .wrap .register .register_wrap .content .submit_btn a{
+    color: #fff;
+    line-height: 41px;
+}
+
+
+
+
+
+/* footer part */
+#footer{
+    width: 100%;
+    background-color: #000;
+}
+#footer .wrap{
+    width: 1160px; 
+    padding: 20px 10px;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: #ffa; */
+}
+
+#footer .wrap .sns_box{ padding: 10px 0;}
+#footer .wrap .sns_box .box{
+    display: inline-block;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 10px;
+}
+#footer .wrap .sns_box .box a{
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+}
+#footer .wrap .sns_box .box:hover a{ color: #f60;}
+#footer .wrap .sns_box .box:hover{ border: 1px solid #f60;}
+
+#footer .wrap .footer_logo{}
+#footer .wrap .footer_logo a img{ padding: 10px 0;}
+
+#footer .wrap .copyright{}
+#footer .wrap .copyright p{ 
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 0;
+}
+
+/* #topBtn (상단으로 이동) */
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#topBtn a{
+    display: block;
+    width: 36px; height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background-color: #f60;
+    color: #fff;
+    border-radius: 4px;
+}
