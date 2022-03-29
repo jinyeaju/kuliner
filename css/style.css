@@ -812,20 +812,21 @@ a{ text-decoration: none;}
 }
 
 #footer .wrap .sns_box{ padding: 10px 0;}
-#footer .wrap .sns_box .box{
+#footer .wrap .sns_box ul{}
+#footer .wrap .sns_box ul li{
     display: inline-block;
     width: 40px; height: 40px;
     border-radius: 50%;
     border: 1px solid #fff;
     margin: 0 10px;
 }
-#footer .wrap .sns_box .box a{
+#footer .wrap .sns_box ul li a{
     color: #fff;
     font-size: 16px;
     line-height: 40px;
 }
-#footer .wrap .sns_box .box:hover a{ color: #f60;}
-#footer .wrap .sns_box .box:hover{ border: 1px solid #f60;}
+#footer .wrap .sns_box ul li:hover a{ color: #f60;}
+#footer .wrap .sns_box ul li:hover{ border: 1px solid #f60;}
 
 #footer .wrap .footer_logo{}
 #footer .wrap .footer_logo a img{ padding: 10px 0;}
